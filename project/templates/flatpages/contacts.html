@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{{ flatpage.title }}</title>
+        <!-- Favicon-->
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+       <a class="navbar-brand" href="#">Какое-то название</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse"
+               data-target="#navbarResponsive"
+               aria-controls="navbarResponsive" aria-expanded="false"
+               aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                   <a class="nav-link" href="#">Контакты
+                       <span class="sr-only">(Вы здесь)</span>
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="/home/">Главная</a>
+               </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="/news/">Новости</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="/about/">О нас</a>
+               </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="/members/">Профиль</a>
+               </li>
+           </ul>
+       </div>
+   </div>
+</nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <hr>
+                <h1><em>Как нас найти</em></h1>
+                <hr>
+                <p class="lead"><h1>Адрес 1</h1></p>
+                <p><h2>Адрес 2</h2></p>
+                <p><h3>email@mail.mail</h3></p>
+                <p><h4>email@mail.com</h4></p>
+                <p><em>{{ flatpage.content }}</em></p>
+            </div>
+        </div>
+    </body>
+</html>
